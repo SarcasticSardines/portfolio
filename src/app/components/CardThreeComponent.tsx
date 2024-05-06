@@ -1,0 +1,35 @@
+'use client'
+
+import React from 'react';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
+import { CardActionArea } from '@mui/material';
+import sc3 from '../assets/Screenshot React App.png'
+
+export default function CardThreeComponent() {
+  return (
+    <Card sx={{ maxWidth: 345 }}>
+      <a href='https://jobinterest-six.vercel.app/'>
+      <CardActionArea>
+        <CardMedia
+          component="img"
+          height="140"
+          image={sc3.src}
+          alt="pokemon search website"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+            {/* try unity project upload and link for 2nd draft */}
+            Job Interest
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            A webpage built in react that focused on researching five different job listings and positions I am interested in pursuing.
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      </a>
+    </Card>
+  );
+}
