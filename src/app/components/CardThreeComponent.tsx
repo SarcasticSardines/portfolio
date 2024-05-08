@@ -6,7 +6,8 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-import sc3 from '../assets/Screenshot React App.png'
+import jobInterestScreenshot from "../assets/images/jobInterestScreenshot.png"
+
 
 export default function CardThreeComponent() {
   return (
@@ -16,7 +17,7 @@ export default function CardThreeComponent() {
         <CardMedia
           component="img"
           height="140"
-          image={sc3.src}
+          image={jobInterestScreenshot.src}
           alt="pokemon search website"
         />
         <CardContent>

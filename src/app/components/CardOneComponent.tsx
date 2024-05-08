@@ -6,7 +6,8 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-import sc1 from '../assets/Screenshot afo React App.png'
+import afoScreenshot from "../assets/images/afoScreenshot.png"
+
 
 export default function CardOneComponent() {
   return (
@@ -16,7 +17,7 @@ export default function CardOneComponent() {
         <CardMedia
           component="img"
           height="140"
-          image={sc1.src}
+          image={afoScreenshot.src}
           alt="all for one react website"
         />
         <CardContent>

@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import TagIcon from '@mui/icons-material/Tag';
 import SendIcon from '@mui/icons-material/Send';

@@ -6,7 +6,8 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-import sc2 from '../assets/Screenshot PokeDex.png'
+import PokeDexScreenshot from "../assets/images/PokeDexScreenshot.png"
+
 
 export default function CardTwoComponent() {
   return (
@@ -16,7 +17,7 @@ export default function CardTwoComponent() {
         <CardMedia
           component="img"
           height="140"
-          image={sc2.src}
+          image={PokeDexScreenshot.src}
           alt="pokemon search website"
         />
         <CardContent>

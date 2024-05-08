@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import HtmlIcon from '@mui/icons-material/Html';
 import CssIcon from '@mui/icons-material/Css';
