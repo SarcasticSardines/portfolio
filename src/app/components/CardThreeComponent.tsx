@@ -11,7 +11,7 @@ import jobInterestScreenshot from "../assets/images/jobInterestScreenshot.png"
 
 export default function CardThreeComponent() {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345, minWidth: 250, minHeight: 300, maxHeight: 325 }}>
       <a href='https://jobinterest-six.vercel.app/'>
       <CardActionArea>
         <CardMedia
@@ -21,11 +21,11 @@ export default function CardThreeComponent() {
           alt="pokemon search website"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography gutterBottom variant="h5" component="div" className='font-sec'>
             {/* try unity project upload and link for 2nd draft */}
             Job Interest
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="body2" color="text.secondary" className='font-main'>
             A webpage built in react that focused on researching five different job listings and positions I am interested in pursuing.
           </Typography>
         </CardContent>

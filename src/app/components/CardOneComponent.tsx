@@ -11,7 +11,7 @@ import afoScreenshot from "../assets/images/afoScreenshot.png"
 
 export default function CardOneComponent() {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345, minWidth: 250, minHeight: 300, maxHeight: 325 }}>
       <a href='https://aforeact.vercel.app/'>
       <CardActionArea>
         <CardMedia
@@ -21,10 +21,10 @@ export default function CardOneComponent() {
           alt="all for one react website"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography gutterBottom variant="h5" component="div" className='font-sec'>
             All For One
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="body2" color="text.secondary" className='font-main'>
             A webpage built in react that uses custom endpoints to return custom values. There are over 10 different endpoints to test out.
           </Typography>
         </CardContent>

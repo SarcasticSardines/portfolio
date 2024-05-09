@@ -11,10 +11,69 @@
     src: url(./assets/PlusJakartaSans-VariableFont_wght.ttf);
 }
 
+body {
+    background-color: rgba(43, 45, 128, 1);
+}
+
 .font-main{
     font-family: LibreBaskerville;
 }
 
 .font-sec{
     font-family: Jakarta;
+}
+
+.navMarg{
+    padding-right: 96px !important;
+    padding-left: 76px !important;
+}
+
+.toggleLilac{
+    color: rgba(219, 227, 251, 1);
+}
+
+.pulse{
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-name: pulse;
+    -webkit-animation-name: pulse;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(.9);
+        opacity: .9
+    }
+
+    50% {
+        transform: scale(1);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes pulse {
+
+    0%,
+    100% {
+        -webkit-transform: scale(.95);
+        opacity: .9
+    }
+
+    50% {
+        -webkit-transform: scale(1);
+        opacity: 1
+    }
+}
+
+@media screen and (min-width: 325px) {
+    .navMarg{
+        padding-right: 0px !important;
+        padding-left: 8px !important;
+    }
 }

@@ -11,7 +11,7 @@ import PokeDexScreenshot from "../assets/images/PokeDexScreenshot.png"
 
 export default function CardTwoComponent() {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345, minWidth: 250, minHeight: 300, maxHeight: 325 }}>
       <a href='https://poke-dex-dun.vercel.app/'>
       <CardActionArea>
         <CardMedia
@@ -21,10 +21,10 @@ export default function CardTwoComponent() {
           alt="pokemon search website"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography gutterBottom variant="h5" component="div" className='font-sec'>
             Pokedex
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="body2" color="text.secondary" className='font-main'>
             A webpage built in vanilla javascript that allows user input and returns information for the corresponding pokemon from an API.
           </Typography>
         </CardContent>

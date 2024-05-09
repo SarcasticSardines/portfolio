@@ -3,13 +3,14 @@
 import React, { useRef } from 'react'
 import AboutComponent from '../AboutComponent'
 import CardOneComponent from '../CardOneComponent'
-import { Footer, Navbar } from 'flowbite-react'
+import { Navbar } from 'flowbite-react'
 import PhishingIcon from '@mui/icons-material/Phishing';
 import CardTwoComponent from '../CardTwoComponent'
 import CardThreeComponent from '../CardThreeComponent'
 import MyFooterComponent from '../MyFooterComponent';
 import SkillsComponent from '../SkillsComponent';
 import ArticleIcon from '@mui/icons-material/Article';
+import Link from 'next/link'
 
 
 const DisplayPage = () => {
@@ -22,43 +23,48 @@ const DisplayPage = () => {
   return (
     <div className="bg-mymidnightblue min-h-screen">
     {/* navbar component in DisplayPage so useRef works with no errors  */}
-    <Navbar className='min-w-full bg-mymidnightblue font-sec'>
-        <div className=' w-full flex justify-between text-softlightlilac mt-6'>
-            <div className="flex">
+    {/* class="px-2 py-2.5 dark:border-gray-700 dark:bg-gray-800 sm:px-4 min-w-full bg-mymidnightblue font-sec" */}
+    {/* class="mx-auto flex flex-wrap items-center justify-between container" */}
+    <Navbar className='min-w-full bg-mymidnightblue font-sec navMarg flex justify-between text-softlightlilac mt-6'>
+            <Navbar.Brand href='#' className="flex">
                 <PhishingIcon fontSize='large' className=''/>
                 <p className='mx-1 mt-2'>Avery Hillstrom</p>
-            </div>
-            <div className="flex mt-2">
-                <button className='mx-10' onClick={() => refOne.current?.scrollIntoView({behavior: 'smooth'})}>
-                    About
-                </button>
-                <button className='mx-10' onClick={() => refTwo.current?.scrollIntoView({behavior: 'smooth'})}>
-                    Skills
-                </button>
-                <button  className='ml-10' onClick={() => refThree.current?.scrollIntoView({behavior: 'smooth'})}>
-                    Work
-                </button>
-            </div>
-        </div>
+            </Navbar.Brand>
+            <Navbar.Toggle className='toggleLilac' />
+      <Navbar.Collapse className="mt-2">
+        <Navbar.Link className='mx-5 text-softlightlilac' onClick={() => refOne.current?.scrollIntoView({behavior: 'smooth'})} >
+          About
+        </Navbar.Link>
+        <Navbar.Link className='mx-5 text-softlightlilac' onClick={() => refTwo.current?.scrollIntoView({behavior: 'smooth'})} >
+          Skills
+        </Navbar.Link>
+        <Navbar.Link className='mx-5 text-softlightlilac' onClick={() => refThree.current?.scrollIntoView({behavior: 'smooth'})} >
+          Work
+          </Navbar.Link>
+        
+      </Navbar.Collapse>
     </Navbar>
-    <div className="flex flex-col justify-center text-softlightlilac mx-48 mt-28 font-main">
+    <div className="flex flex-col justify-center text-softlightlilac lg:mx-[10%] mx-7 mt-28 font-main">
     {/* about section */}
-    <div ref={refOne} className='my-20' >
+    <div ref={refOne} className='py-10 my-10' >
       <AboutComponent/>
     </div>
 
       {/* skills */}
-      <div ref={refTwo} className=' mt-36'>
+      <div ref={refTwo} className='pt-10 mt-28'>
         <SkillsComponent/>
       </div>
 
       {/* work section */}
+      <div className='pt-32 mt-28'>
+      <p className="pb-10 font-bold text-2xl font-sec">Projects</p>
+
       <div className="flex justify-center">
-      <div ref={refThree} className='grid grid-cols-3 gap-56 mt-60'>
-        <div>
+      <div ref={refThree} className='lg:grid lg:grid-cols-3 xl:gap-56 lg:gap-32'>
+        <div className='lg:mb-0 mb-20'>
           <CardOneComponent/>
         </div>
-        <div>
+        <div className='lg:my-0 my-20'>
             <CardTwoComponent/>
         </div>
         <div>
@@ -66,12 +72,12 @@ const DisplayPage = () => {
         </div>
       </div>
       </div>
+      </div>
 
-      <div className='mt-28 mb-16 text-center'>
-        <a className='flex justify-center softlightlilac' href='/ResumeAH.pdf' target='_blank' download>
-            {/* download not working? will redo in 2nd draft */}
-        <ArticleIcon fontSize='large' color='inherit'/>
-        <h1 className='ms-2 text-3xl font-bold'>Resume (PDF)</h1>
+      <div className='mt-32 mb-20 text-center'>
+        <a className='flex justify-center softlightlilac pulse' href='/pdfs/ResumeAH.pdf' target='_blank' rel='noopener noreferrer' download='ResumeAH'>
+        <ArticleIcon fontSize='large' color='inherit' className=''/>
+        <h1 className='ms-2 text-3xl font-bold font-sec'>Resume (PDF)</h1>
         </a>
       </div>
     </div>
