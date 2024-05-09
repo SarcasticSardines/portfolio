@@ -23,7 +23,7 @@ const SkillsComponent = () => {
       </div>
 
       <div>
-        <p className='pb-10 font-bold text-2xl font-sec'>Frameworks</p>
+        <p className='pb-10 lg:pt-0 pt-28 font-bold text-2xl font-sec'>Frameworks</p>
         <div className="grid lg:grid-cols-3 grid-cols-2 gap-5 lg:gap-10 text-softlightlilac text-lg text-center">
             <p>Bootstrap</p>
             <p>Tailwind CSS</p>

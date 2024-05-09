@@ -56,11 +56,11 @@ const DisplayPage = () => {
       </div>
 
       {/* work section */}
-      <div className='pt-32 mt-28'>
+      <div ref={refThree} className='pt-32 mt-28'>
       <p className="pb-10 font-bold text-2xl font-sec">Projects</p>
 
       <div className="flex justify-center">
-      <div ref={refThree} className='lg:grid lg:grid-cols-3 xl:gap-56 lg:gap-32'>
+      <div className='lg:grid lg:grid-cols-3 xl:gap-56 lg:gap-32'>
         <div className='lg:mb-0 mb-20'>
           <CardOneComponent/>
         </div>
