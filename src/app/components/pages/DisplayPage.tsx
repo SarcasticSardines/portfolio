@@ -21,11 +21,11 @@ const DisplayPage = () => {
 
 
   return (
-    <div className="bg-mymidnightblue min-h-screen">
+    <div className="gradBg min-h-screen">
     {/* navbar component in DisplayPage so useRef works with no errors  */}
     {/* class="px-2 py-2.5 dark:border-gray-700 dark:bg-gray-800 sm:px-4 min-w-full bg-mymidnightblue font-sec" */}
     {/* class="mx-auto flex flex-wrap items-center justify-between container" */}
-    <Navbar className='min-w-full bg-mymidnightblue font-sec navMarg flex justify-between text-softlightlilac mt-6'>
+    <Navbar className='min-w-full bg-lightmidnightblue font-sec navMarg flex justify-between text-softlightlilac mt-6'>
             <Navbar.Brand href='#' className="flex">
                 <PhishingIcon fontSize='large' className=''/>
                 <p className='mx-1 mt-2'>Avery Hillstrom</p>
