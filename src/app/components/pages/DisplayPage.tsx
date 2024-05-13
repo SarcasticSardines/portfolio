@@ -75,7 +75,8 @@ const DisplayPage = () => {
       </div>
 
       <div className='mt-32 mb-20 text-center'>
-        <a className='flex justify-center softlightlilac pulse' href='/pdfs/ResumeAH.pdf' target='_blank' rel='noopener noreferrer' download='ResumeAH'>
+        <a className='flex justify-center softlightlilac' href='/pdfs/ResumeAH.pdf' target='_blank' rel='noopener noreferrer' download='ResumeAH'>
+          {/* pulse wickedcss removed due to screen flickering error? */}
         <ArticleIcon fontSize='large' color='inherit' className=''/>
         <h1 className='ms-2 text-3xl font-bold font-sec'>Resume (PDF)</h1>
         </a>

@@ -9,7 +9,8 @@ const SkillsComponent = () => {
     <div className='lg:flex lg:justify-between'>
      
       <div>
-        <p className='pb-10 font-bold text-2xl font-sec'>Skills</p>
+        <p className='pb-2 font-bold text-2xl font-sec'>Languages</p>
+        <hr className='pb-10'/>
         <div className="grid lg:grid-cols-3 grid-cols-2 gap-5 lg:gap-10 text-softlightlilac text-lg text-center">
             {/* <HtmlIcon fontSize='large'/>
             <CssIcon fontSize='large'/>
@@ -18,12 +19,14 @@ const SkillsComponent = () => {
             <p>CSS</p>
             <p>Javascript</p>
             <p>C#</p>
+            <p>Typescript</p>
 
         </div>
       </div>
 
       <div>
-        <p className='pb-10 lg:pt-0 pt-28 font-bold text-2xl font-sec'>Frameworks</p>
+        <p className='pb-2 lg:pt-0 pt-28 font-bold text-2xl font-sec'>Frameworks</p>
+        <hr className='pb-10'/>
         <div className="grid lg:grid-cols-3 grid-cols-2 gap-5 lg:gap-10 text-softlightlilac text-lg text-center">
             <p>Bootstrap</p>
             <p>Tailwind CSS</p>
