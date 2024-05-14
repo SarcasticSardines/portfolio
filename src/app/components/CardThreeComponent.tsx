@@ -13,7 +13,6 @@ export default function CardThreeComponent() {
   return (
     <Card sx={{ maxWidth: 345, minWidth: 250, minHeight: 300, maxHeight: 325 }}>
       <a href='https://jobinterest-six.vercel.app/'>
-      <CardActionArea>
         <CardMedia
           component="img"
           height="140"
@@ -29,7 +28,6 @@ export default function CardThreeComponent() {
             A webpage built in react that focused on researching five different job listings and positions I am interested in pursuing.
           </Typography>
         </CardContent>
-      </CardActionArea>
       </a>
     </Card>
   );

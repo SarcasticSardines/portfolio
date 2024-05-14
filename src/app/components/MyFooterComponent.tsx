@@ -21,11 +21,11 @@ const MyFooterComponent = () => {
         
             <div className='flex softlightlilac lg:my-0 my-1'>
                 <LinkedInIcon/>
-                <a href='https://www.linkedin.com/in/avery-hillstrom-70b3a12ba/' className='ms-1'>Avery Hillstrom</a>
+                <a href='https://www.linkedin.com/in/avery-hillstrom-70b3a12ba/' target='blank' className='ms-1'>Avery Hillstrom</a>
             </div>
             <div className='flex softlightlilac lg:my-0 my-1'>
                 <GitHubIcon/>
-                <a href='https://github.com/SarcasticSardines' className='ms-2'>SarcasticSardines</a>
+                <a href='https://github.com/SarcasticSardines' target='blank' className='ms-2'>SarcasticSardines</a>
             </div>
         </div>
     </footer>

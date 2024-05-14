@@ -13,7 +13,6 @@ export default function CardOneComponent() {
   return (
     <Card sx={{ maxWidth: 345, minWidth: 250, minHeight: 300, maxHeight: 325 }}>
       <a href='https://aforeact.vercel.app/'>
-      <CardActionArea>
         <CardMedia
           component="img"
           height="140"
@@ -28,7 +27,6 @@ export default function CardOneComponent() {
             A webpage built in react that uses custom endpoints to return custom values. There are over 10 different endpoints to test out.
           </Typography>
         </CardContent>
-      </CardActionArea>
       </a>
     </Card>
   );

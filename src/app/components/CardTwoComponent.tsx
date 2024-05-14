@@ -13,7 +13,6 @@ export default function CardTwoComponent() {
   return (
     <Card sx={{ maxWidth: 345, minWidth: 250, minHeight: 300, maxHeight: 325 }}>
       <a href='https://poke-dex-dun.vercel.app/'>
-      <CardActionArea>
         <CardMedia
           component="img"
           height="140"
@@ -28,7 +27,6 @@ export default function CardTwoComponent() {
             A webpage built in vanilla javascript that allows user input and returns information for the corresponding pokemon from an API.
           </Typography>
         </CardContent>
-      </CardActionArea>
       </a>
     </Card>
   );
